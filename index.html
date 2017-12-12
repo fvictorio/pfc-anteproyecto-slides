@@ -1,30 +1,37 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Anteproyecto</title>
+    <title>Anteproyecto</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/solarized.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+<style>
+img.no-border {
+  border: none !important;
+  text-shadow: none !important;
+}
+</style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
           <img src="img/fichunl.png" alt="">
           <h3>Propuesta de Proyecto Final de Carrera</h3>
           <h4>Implementación de un algoritmo <br>de aprendizaje semi-supervisado sobre Spark</h4>
@@ -33,60 +40,291 @@
           <div>Director: Cristian Yones</div>
         </section>
 
+        <!-- JUSTIFICACIÓN -->
+
+        <!-- Aprendizaje supervisado -->
         <section>
             <section>
               <h3>Aprendizaje supervisado</h3>
-              <img class="stretch" src="img/supervised-learning-1.png" style="border: none; box-shadow: none;">
+              <img class="stretch no-border" src="img/supervised-learning-1.png">
             </section>
             <section>
               <h3>Aprendizaje supervisado</h3>
-              <img class="stretch" src="img/supervised-learning-2.png" style="border: none; box-shadow: none;">
+              <img class="stretch no-border" src="img/supervised-learning-2.png">
             </section>
             <section>
               <h3>Aprendizaje supervisado</h3>
-              <img class="stretch" src="img/supervised-learning-3.png" style="border: none; box-shadow: none;">
+              <img class="stretch no-border" src="img/supervised-learning-3.png">
+            </section>
+            <section>
+              <h3>Aprendizaje supervisado</h3>
+              <img class="stretch no-border" src="img/supervised-learning-4.png">
             </section>
         </section>
 
+        <!-- Aprendizaje no supervisado -->
         <section>
             <section>
               <h3>Aprendizaje no supervisado</h3>
-              <img class="stretch" src="img/unsupervised-learning-1.png" style="border: none; box-shadow: none;">
+              <img class="stretch no-border" src="img/unsupervised-learning-1.png">
             </section>
             <section>
               <h3>Aprendizaje no supervisado</h3>
-              <img class="stretch" src="img/unsupervised-learning-2.png" style="border: none; box-shadow: none;">
+              <img class="stretch no-border" src="img/unsupervised-learning-2.png">
             </section>
         </section>
 
+        <!-- Aprendizaje semi-supervisado -->
         <section>
             <section>
               <h3>Aprendizaje semi-supervisado</h3>
-              <img class="stretch" src="img/semi-supervised-learning-1.png" style="border: none; box-shadow: none;">
+              <img class="stretch no-border" src="img/semi-supervised-learning-1.png">
             </section>
             <section>
               <h3>Aprendizaje semi-supervisado</h3>
-              <img class="stretch" src="img/semi-supervised-learning-2.png" style="border: none; box-shadow: none;">
+              <img class="stretch no-border" src="img/semi-supervised-learning-2.png">
             </section>
         </section>
-			</div>
-		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <!-- Big data -->
+        <section>
+          <h3>Big data</h3>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+          <ul>
+            <li class="fragment">Cantidades de datos inmanejables en un solo servidor</li>
+            <li class="fragment">Almacenamiento y procesamiento distribuidos</li>
+            <li class="fragment">Apache Spark</li>
+          </ul>
+        </section>
+
+        <!-- Objetivos -->
+        <section>
+          <section>
+            <h3>Objetivos</h3>
+
+            <ul>
+              <li>
+                Objetivos generales:
+                <ul>
+                  <li class="fragment">Implementar un algoritmo de aprendizaje semi-supervisado en Apache Spark</li>
+                  <li class="fragment">Validar la utilidad de combinar aprendizaje semi-supervisado con tecnologías de big data.</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Objetivos</h3>
+
+            <ul style="font-size: 0.75em;">
+              <li>
+                Objetivos específicos:
+                <ul>
+                  <li class="fragment">Implementar el pipeline sobre el que estará construido el algoritmo.</li>
+                  <li class="fragment">Implementar cada uno de los módulos del algoritmo.</li>
+                  <li class="fragment">Realizar pruebas para validar la utilidad de combinar aprendizaje semi-supervisado con tecnologías de big data.</li>
+                  <li class="fragment">Realizar pruebas comparativas de desempeño y eficiencia utilizando bases de datos reales y analizar los resultados.</li>
+                  <li class="fragment">Publicar el algoritmo en los canales apropiados para facilitar su utilización.</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h3>Alcance</h3>
+
+          <ul>
+            <li>Ejecución sobre Spark</li>
+            <li class="fragment">Realización de pruebas sobre Google Cloud</li>
+            <li class="fragment">Publicado como librería, sin CLI o GUI</li>
+            <li class="fragment">Comparaciones con algoritmos de libre acceso.</li>
+          </ul>
+        </section>
+
+        <!-- Metodología -->
+        <section>
+          <section>
+            <h3>Metodología</h3>
+
+            <div>Etapa 1: Diseño e implementación de la arquitectura</div>
+            <br>
+
+            <img class="stretch no-border"src="img/metodologia.png" alt="">
+          </section>
+
+          <section>
+            <h3>Metodología</h3>
+
+            <div>Etapa 2: Implementación de los módulos</div>
+            <br>
+
+            <img class="stretch no-border"src="img/metodologia.png" alt="">
+          </section>
+
+          <section>
+            <h3>Metodología</h3>
+
+            <div>Etapa 3: Pruebas, análisis de resultados y publicación</div>
+          </section>
+        </section>
+
+        <!-- Plan de tareas -->
+        <section>
+          <h3>Plan de tareas</h3>
+
+          <table style="font-size: 0.75em">
+            <thead>
+              <tr>
+                <th>Tarea</th>
+                <th>Horas</th>
+                <th>Semanas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Diseño e implementación de la arquitectura</td>
+                <td>30</td>
+                <td>1-2</td>
+              </tr>
+              <tr>
+                <td>Implementación de los módulos</td>
+                <td>200</td>
+                <td>3-15</td>
+              </tr>
+              <tr>
+                <td>Pruebas, análisis de resultados y publicación</td>
+                <td>110</td>
+                <td>16-23</td>
+              </tr>
+              <tr>
+                <td>Redacción del informe final</td>
+                <td>90</td>
+                <td>24-29</td>
+              </tr>
+              <tr>
+                <th>Total</th>
+                <th>430</th>
+                <th>29</th>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Cronograma -->
+        <section>
+          <section>
+            <h3>Cronograma</h3>
+
+            <table style="font-size: 0.75em">
+              <thead>
+                <tr>
+                  <th>Tarea</th>
+                  <th>Período</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Diseño e implementación de la arquitectura</td>
+                  <td>Del 15/01 al 27/01</td>
+                </tr>
+                <tr>
+                  <td>Implementación de los módulos</td>
+                  <td>Del 29/01 al 20/04</td>
+                </tr>
+                <tr>
+                  <td>Pruebas, análisis de resultados y publicación</td>
+                  <td>Del 23/04 al 22/06</td>
+                </tr>
+                <tr>
+                  <td>Redacción del informe final</td>
+                  <td>Del 25/06 al 03/08</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section>
+            <h3>Cronograma</h3>
+
+            <img class="no-border" src="img/gantt.png" alt="">
+          </section>
+        </section>
+
+        <!-- Riesgos -->
+        <section>
+          <h3>Riesgos</h3>
+
+          <ul>
+            <li class="fragment">Problemas de eficiencia</li>
+            <li class="fragment">Costos de ejecución elevados</li>
+            <li class="fragment">Dificultad para conseguir datos de prueba</li>
+          </ul>
+        </section>
+
+        <!-- Presupuesto -->
+        <section>
+          <h3>Presupuesto</h3>
+
+          <table class="stretch" style="font-size: 0.75em">
+            <thead>
+              <tr>
+                <th>Razón</th>
+                <th>Concepto</th>
+                <th>Monto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Remuneración del estudiante</td>
+                <td>Gasto</td>
+                <td style="text-align: right;">$107.500</td>
+              </tr>
+              <tr>
+                <td>Remuneración del director</td>
+                <td>Gasto</td>
+                <td style="text-align: right;">$10.750</td>
+              </tr>
+              <tr>
+                <td>Utilización de Google Cloud</td>
+                <td>Gasto</td>
+                <td style="text-align: right;">$5400</td>
+              </tr>
+              <tr>
+                <td>Servicios</td>
+                <td>Gasto</td>
+                <td style="text-align: right;">$1000</td>
+              </tr>
+              <tr>
+                <td>PC</td>
+                <td>Amortización</td>
+                <td style="text-align: right;">$1250</td>
+              </tr>
+              <tr>
+                <th>Total</th>
+                <th colspan="2" style="text-align: right;">$125.900</th>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
 </html>
